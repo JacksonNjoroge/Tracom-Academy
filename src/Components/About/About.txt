@@ -1,0 +1,158 @@
+import './About.css'
+import {useState} from 'react'
+function About() {
+    const [isVisible, setIsVisible] = useState(false);
+    const toggleDiv = () =>{
+        setIsVisible(!isVisible);
+    };
+
+  return (
+    <>
+    <div className="container">
+
+        <h2 classNameName='title'>About</h2>
+
+        <p className='about-text'> Tracom Academy is an initiative of Tracom Services Limited, a leading FinTech company. We are committed to shaping the next generation of developers and IT professionals by providing comprehensive, industry-aligned training in key technology areas. Our programs are designed for aspiring tech enthusiasts who want to master the skills required in today’s digital world. </p>
+        <div id='more-text' style={{display: isVisible? 'block' : 'none'}}>
+            <p className='about-text'>
+            At Tracom Academy, we offer hands-on courses in:
+    
+            Frontend and Backend Web Development: Learn how to create dynamic and responsive websites using modern tools and frameworks. 
+            <br />
+            Mobile Development: Gain the skills to build powerful, user-friendly mobile applications for both Android and iOS.
+            <br />
+            Database Management: Understand the intricacies of database design, management, and optimization for real-world applications.
+            <br />
+            POS (Point of Sale) System Development: Master the development of POS systems, from designing user-friendly interfaces to managing transactions and security.
+            <br />
+            With a focus on practical experience and expert guidance, Tracom Academy ensures that our students are not only prepared to meet industry demands but also to excel in their careers as developers and IT professionals.
+            </p>
+            <br />
+            <p className='about-text'>
+            Join us today and start building your future with the knowledge and skills that will set you apart in the tech world.
+            </p>
+        </div>
+        <button className='read-more' onClick={toggleDiv}>
+            {isVisible ? "Read Less" : "Read More"}
+        </button>
+
+        <div className="associates scroll-bar">
+          <h2 className="associates-title">in association with...</h2>
+          <ul className="associates-list">
+            <li className="assoaciate">
+              <img src="" alt="" />
+            </li>
+            <li className="assoaciate">
+              <img src="" alt="" />
+            </li>
+            <li className="assoaciate">
+              <img src="" alt="" />
+            </li>
+            <li className="assoaciate">
+              <img src="" alt="" />
+            </li>
+            <li className="assoaciate">
+              <img src="" alt="" />
+            </li>
+          </ul>
+        </div>
+
+        <div className="testimonials scroll-bar">
+          <h2 className="testimonials-title">Testimonials</h2>
+
+          <ul className="testimonials-list">
+
+            <li className="testimony">
+              <div className="content-card" data-testimonials-item>
+
+              <figure className="testimonials-avatar-box">
+                <img src="" alt="" />
+              </figure>
+              
+              <h4 className="h4 testimonials-item-title" data-testimonials-title>Daniel lee</h4>
+              
+              <div className="testimonials-text" data-testimonials-text>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus numquam explicabo quo deleniti quaerat dicta unde? Temporibus, at dolorem! Quia odio tenetur eveniet iusto perferendis. Odit aliquid quos, natus ad, ex numquam qui vitae saepe suscipit ipsam nam nobis cum culpa.
+                </p>
+              </div>
+              </div>
+            </li>
+
+            <li className="testimony">
+              <div className="content-card" data-testimonials-item>
+
+              <figure className="testimonials-avatar-box">
+                <img src="" alt="" />
+              </figure>
+              
+              <h4 className="h4 testimonials-item-title" data-testimonials-title>Daniel lee</h4>
+              
+              <div className="testimonials-text" data-testimonials-text>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus numquam explicabo quo deleniti quaerat dicta unde? Temporibus, at dolorem! Quia odio tenetur eveniet iusto perferendis. Odit aliquid quos, natus ad, ex numquam qui vitae saepe suscipit ipsam nam nobis cum culpa.
+                </p>
+              </div>
+              </div>
+            </li>
+
+            <li className="testimony">
+              <div className="content-card" data-testimonials-item>
+
+              <figure className="testimonials-avatar-box">
+                <img src="" alt="" />
+              </figure>
+              
+              <h4 className="h4 testimonials-item-title" data-testimonials-title>Daniel lee</h4>
+              
+              <div className="testimonials-text" data-testimonials-text>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus numquam explicabo quo deleniti quaerat dicta unde? Temporibus, at dolorem! Quia odio tenetur eveniet iusto perferendis. Odit aliquid quos, natus ad, ex numquam qui vitae saepe suscipit ipsam nam nobis cum culpa.
+                </p>
+              </div>
+              </div>
+            </li>
+
+            <li className="testimony">
+              <div className="content-card" data-testimonials-item>
+
+              <figure className="testimonials-avatar-box">
+                <img src="" alt="" />
+              </figure>
+              
+              <h4 className="h4 testimonials-item-title" data-testimonials-title>Daniel lee</h4>
+              
+              <div className="testimonials-text" data-testimonials-text>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus numquam explicabo quo deleniti quaerat dicta unde? Temporibus, at dolorem! Quia odio tenetur eveniet iusto perferendis. Odit aliquid quos, natus ad, ex numquam qui vitae saepe suscipit ipsam nam nobis cum culpa.
+                </p>
+              </div>
+              </div>
+            </li>
+
+            <li className="testimony">
+              <div className="content-card" data-testimonials-item>
+
+              <figure className="testimonials-avatar-box">
+                <img src="" alt="" />
+              </figure>
+              
+              <h4 className="h4 testimonials-item-title" data-testimonials-title>Daniel lee</h4>
+              
+              <div className="testimonials-text" data-testimonials-text>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus numquam explicabo quo deleniti quaerat dicta unde? Temporibus, at dolorem! Quia odio tenetur eveniet iusto perferendis. Odit aliquid quos, natus ad, ex numquam qui vitae saepe suscipit ipsam nam nobis cum culpa.
+                </p>
+              </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+   </div>
+    </>
+   
+  )
+}
+
+export default About

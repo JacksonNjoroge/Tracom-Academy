@@ -1,0 +1,64 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a { text-decoration: none; }
+li { list-style: none; }
+
+html {
+  background: #121212;
+}
+
+main {
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;     /* Vertically center */
+}
+
+.wrapper {
+    position: relative;
+    width: 700px;
+    margin-top: auto;
+    margin-left: 150px;
+    background: #1e1e1f;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 20px 40px;
+    overflow: visible; /* This ensures no scroll bar appears */
+    max-height: none;  /* Allow scrolling inside if the content exceeds the height */
+}
+
+.wrapper nav {
+    position: absolute;
+    border-radius: 0 20px;
+    top: 0;
+    right: 0;
+    width: 500px;
+    padding: 0 15px;
+    background: #282829;
+}
+
+.wrapper nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.wrapper nav ul li {
+    background: #ff6500;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.wrapper nav ul li .link {
+    font-size: 18px;
+    color: aliceblue;
+}
+
+.wrapper .container {
+    margin-top: 100px;
+}
